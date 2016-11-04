@@ -1,0 +1,12 @@
+C:\Users\Donna\documents\visual studio 2015\Projects\gh3texview\gh3texview\bin\Release\gh3texview.exe
+C:\Users\Donna\documents\visual studio 2015\Projects\gh3texview\gh3texview\bin\Release\gh3texview.pdb
+C:\Users\Donna\documents\visual studio 2015\Projects\gh3texview\gh3texview\obj\Release\gh3texview.gui_battery.resources
+C:\Users\Donna\documents\visual studio 2015\Projects\gh3texview\gh3texview\obj\Release\gh3texview.gh3.resources
+C:\Users\Donna\documents\visual studio 2015\Projects\gh3texview\gh3texview\obj\Release\gh3texview.Properties.Resources.resources
+C:\Users\Donna\documents\visual studio 2015\Projects\gh3texview\gh3texview\obj\Release\gh3texview.wifi.resources
+C:\Users\Donna\documents\visual studio 2015\Projects\gh3texview\gh3texview\obj\Release\gh3texview.csproj.GenerateResource.Cache
+C:\Users\Donna\documents\visual studio 2015\Projects\gh3texview\gh3texview\obj\Release\gh3texview.exe
+C:\Users\Donna\documents\visual studio 2015\Projects\gh3texview\gh3texview\obj\Release\gh3texview.pdb
+C:\Users\Donna\documents\visual studio 2015\Projects\gh3texview\gh3texview\obj\Release\gh3texview.csprojResolveAssemblyReference.cache
+C:\Users\Donna\documents\visual studio 2015\Projects\gh3texview\gh3texview\obj\Release\gh3texview.scoremeter.resources
+C:\Users\Donna\documents\visual studio 2015\Projects\gh3texview\gh3texview\obj\Release\gh3texview.ddmeter.resources

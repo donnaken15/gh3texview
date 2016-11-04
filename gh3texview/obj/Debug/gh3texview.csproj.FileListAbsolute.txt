@@ -1,0 +1,11 @@
+c:\users\donna\documents\visual studio 2015\Projects\gh3texview\gh3texview\bin\Debug\gh3texview.exe
+c:\users\donna\documents\visual studio 2015\Projects\gh3texview\gh3texview\bin\Debug\gh3texview.pdb
+c:\users\donna\documents\visual studio 2015\Projects\gh3texview\gh3texview\obj\Debug\gh3texview.csprojResolveAssemblyReference.cache
+c:\users\donna\documents\visual studio 2015\Projects\gh3texview\gh3texview\obj\Debug\gh3texview.Properties.Resources.resources
+c:\users\donna\documents\visual studio 2015\Projects\gh3texview\gh3texview\obj\Debug\gh3texview.csproj.GenerateResource.Cache
+c:\users\donna\documents\visual studio 2015\Projects\gh3texview\gh3texview\obj\Debug\gh3texview.exe
+c:\users\donna\documents\visual studio 2015\Projects\gh3texview\gh3texview\obj\Debug\gh3texview.pdb
+c:\users\donna\documents\visual studio 2015\Projects\gh3texview\gh3texview\obj\Debug\gh3texview.gh3.resources
+c:\users\donna\documents\visual studio 2015\Projects\gh3texview\gh3texview\obj\Debug\gh3texview.gui_battery.resources
+c:\users\donna\documents\visual studio 2015\Projects\gh3texview\gh3texview\obj\Debug\gh3texview.wifi.resources
+c:\users\donna\documents\visual studio 2015\Projects\gh3texview\gh3texview\obj\Debug\gh3texview.rockmeter.resources

@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1E2FC937-678C-4EFB-9A22-11666793EFE5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>gh3texview</RootNamespace>
+    <AssemblyName>gh3texview</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="battery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="battery.Designer.cs">
+      <DependentUpon>battery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ddmeter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ddmeter.Designer.cs">
+      <DependentUpon>ddmeter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="scoremeter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="scoremeter.Designer.cs">
+      <DependentUpon>scoremeter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wifi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wifi.Designer.cs">
+      <DependentUpon>wifi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="battery.resx">
+      <DependentUpon>battery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ddmeter.resx">
+      <DependentUpon>ddmeter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="scoremeter.resx">
+      <DependentUpon>scoremeter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wifi.resx">
+      <DependentUpon>wifi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base_charging.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\push.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\steal_grab.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\steal_open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whammy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\missing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xplorer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xplorer_hold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xplorer_strum.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\needle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\score.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shadow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\needle1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4th_digit_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\needle2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base_full_ready.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base_full_unready.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fill_ready.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fill_unready.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preview2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wing1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preview3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\missing1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preview4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preview5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\all.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
